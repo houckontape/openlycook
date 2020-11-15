@@ -1,0 +1,5 @@
+/vendor
+/.history
+/.vscode
+/asset
+/src/model/Co.php
