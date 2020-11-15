@@ -2,13 +2,13 @@
 # for PHP7.3 smarty composer vscode 
 
 ### Composer ###
-vendor
+/vendor
 
 ### vscode ###
-.history/
-.vscode/
+/.history
+/.vscode
 
 ## other ##
-.htaccess
-src/model/*
-template/templates_c/
+/.htaccess
+/src/model/*
+/template/templates_c/

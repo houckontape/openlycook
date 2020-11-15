@@ -1,7 +1,6 @@
 <?php
 session_start();
 /**
- *  author: houck 15/11/2020
  *  routeur Frontal  
  *  interprete l url et renvoie la reponse du site
  */
