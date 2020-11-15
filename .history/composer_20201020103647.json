@@ -1,0 +1,15 @@
+{
+    "name": "david/openlycook",
+    "authors": [
+        {
+            "name": "houckontape",
+            "email": "43896496+houckontape@users.noreply.github.com"
+        }
+    ],
+    "autoload":{
+        "psr-4": {"Houck\\":"src/"}
+    },
+    "require": {
+        "smarty/smarty": "^3.1"
+    }
+}

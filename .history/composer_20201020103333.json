@@ -1,0 +1,12 @@
+{
+    "name": "david/openlycook",
+    "authors": [
+        {
+            "name": "houckontape",
+            "email": "43896496+houckontape@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "smarty/smarty": "^3.1"
+    }
+}
