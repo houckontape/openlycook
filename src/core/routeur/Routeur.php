@@ -35,17 +35,17 @@ class Routeur
     public function createPage(){
         
         switch($this->url){
-            case '/openlycook/':
+            case '/':
                 //print_r($this->data);
                 $page = new Home($this->data);
                 $page->getPage();
                 break;
-            case '/openlycook/public/':
+            case '/public/':
                 //print_r($this->data);
                 $page = new Home($this->data);
                 $page->getPage();
                 break;
-            case '/openlycook/inscription/':
+            case '/inscription/':
                 if(!isset($_SESSION['name'])){
                     $user= new User($this->data);
                     $user->enregistrement();
@@ -54,7 +54,7 @@ class Routeur
                 $page->getPage();
                 
                 break;
-            case  '/openlycook/profil/':
+            case  '/profil/':
                 $page = new Profil($_SESSION);
                 $page->getPage(); 
                 break; 

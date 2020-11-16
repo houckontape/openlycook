@@ -14,28 +14,28 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/openlycook/">Accueil
+            <a class="nav-link" href="/">Accueil
               <span class="sr-only">(current)</span>
             </a>
           </li>          
           <li class="nav-item">
-            <a class="nav-link" href="/openlycook/articles/">Articles</a>
+            <a class="nav-link" href="/articles/">Articles</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/openlycook/contact/">Contact</a>
+            <a class="nav-link" href"/contact/">Contact</a>
           </li>		 
           {if (isset($name))}
           <li class="nav-item">
-            <a class="nav-link" href="/openlycook/repas/">Organiser mes Repas</a>
+            <a class="nav-link" href="/repas/">Organiser mes Repas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/openlycook/recette/">Recette</a>
+            <a class="nav-link" href="/recette/">Recette</a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="/openlycook/recette/">Enregistrer une Recette</a>
+            <a class="nav-link" href="/recette/">Enregistrer une Recette</a>
           </li>		 		 
           <li class="nav-item">
-            <a class="nav-link" href="/openlycook/profil/">Profil</a>
+            <a class="nav-link" href="/profil/">Profil</a>
           </li>		 
 		{else}
 		  <li class="nav-item">
