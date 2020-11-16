@@ -12,6 +12,7 @@ use Houck\controller\Inscription;
 use Houck\controller\Profil;
 use Houck\util\User;
 use Houck\controller\Recette;
+use Houck\controller\EnregistrerRecette;
 
 class Routeur 
 {
@@ -58,8 +59,12 @@ class Routeur
                 $page = new Profil($_SESSION);
                 $page->getPage(); 
                 break; 
-            case  '/openlycook/recette/':
+            case  '/recette/':
                 $page = new Recette($_SESSION); 
+                break; 
+            case  '/enregistrer_recette/':
+                $page = new EnregistrerRecette($_SESSION);
+                $page->getPage(); 
                 break;       
             default :
                 $page = new Nopage();    

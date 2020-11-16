@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-14 21:48:04
+/* Smarty version 3.1.36, created on 2020-11-16 05:42:27
   from 'C:\wamp64\www\openlycook\template\navigation.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb05094523db4_90385012',
+  'unifunc' => 'content_5fb21143c5ea25_34179434',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '780d8fb59824dace8eff64b0c1f80585a40a2167' => 
     array (
       0 => 'C:\\wamp64\\www\\openlycook\\template\\navigation.tpl',
-      1 => 1605390482,
+      1 => 1605505345,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5fb05094523db4_90385012 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb21143c5ea25_34179434 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <?php if (((isset($_smarty_tpl->tpl_vars['messageInfo']->value)))) {?>
@@ -39,32 +39,32 @@ function content_5fb05094523db4_90385012 (Smarty_Internal_Template $_smarty_tpl)
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/openlycook/">Accueil
+            <a class="nav-link" href="/">Accueil
               <span class="sr-only">(current)</span>
             </a>
           </li>          
           <li class="nav-item">
-            <a class="nav-link" href="/openlycook/articles/">Articles</a>
+            <a class="nav-link" href="/articles/">Articles</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/openlycook/contact/">Contact</a>
+            <a class="nav-link" href="/contact/">Contact</a>
           </li>		 
           <?php if (((isset($_smarty_tpl->tpl_vars['name']->value)))) {?>
           <li class="nav-item">
-            <a class="nav-link" href="/openlycook/repas/">Organiser mes Repas</a>
+            <a class="nav-link" href="/repas/">Organiser mes Repas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/openlycook/recette/">Recette</a>
+            <a class="nav-link" href="/recette/">Recette</a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="/openlycook/recette/">Enregistrer une Recette</a>
+            <a class="nav-link" href="/enregistrer_recette/">Enregistrer une Recette</a>
           </li>		 		 
           <li class="nav-item">
-            <a class="nav-link" href="/openlycook/profil/">Profil</a>
+            <a class="nav-link" href="/profil/">Profil</a>
           </li>		 
 		<?php } else { ?>
 		  <li class="nav-item">
-				<a class="nav-link" href="/openlycook/inscription/">Inscription</a>
+				<a class="nav-link" href="/inscription/">Inscription</a>
 		</li>
 		
 		<?php }?> 
@@ -96,8 +96,7 @@ function content_5fb05094523db4_90385012 (Smarty_Internal_Template $_smarty_tpl)
           </button>
         </div>
         <div class="modal-body">     
-    
-      <form  action="/openlycook/" method ="post">
+      <form  action="/" method ="post">
         <fieldset>
         <legend>Inscription</legend>
           <div>

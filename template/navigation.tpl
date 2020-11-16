@@ -22,7 +22,7 @@
             <a class="nav-link" href="/articles/">Articles</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href"/contact/">Contact</a>
+            <a class="nav-link" href="/contact/">Contact</a>
           </li>		 
           {if (isset($name))}
           <li class="nav-item">
@@ -32,14 +32,14 @@
             <a class="nav-link" href="/recette/">Recette</a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="/recette/">Enregistrer une Recette</a>
+            <a class="nav-link" href="/enregistrer_recette/">Enregistrer une Recette</a>
           </li>		 		 
           <li class="nav-item">
             <a class="nav-link" href="/profil/">Profil</a>
           </li>		 
 		{else}
 		  <li class="nav-item">
-				<a class="nav-link" href="/openlycook/inscription/">Inscription</a>
+				<a class="nav-link" href="/inscription/">Inscription</a>
 		</li>
 		
 		{/if} 
@@ -70,8 +70,7 @@
           </button>
         </div>
         <div class="modal-body">     
-    
-      <form  action="/openlycook/" method ="post">
+      <form  action="/" method ="post">
         <fieldset>
         <legend>Inscription</legend>
           <div>
