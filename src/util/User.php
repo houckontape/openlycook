@@ -19,6 +19,8 @@ class User
     {
         if(isset($data['name'])){
             $this->name= Secu::XSS($data['name']);
+            $this->mail=Secu::filtreMail($data['mail']);
+            $this->password =Secu::hash($data['password']);//on cree la cle de hashage directement lors de la construc
         }else{
             $this->mail=Secu::filtreMail($data['mail']);
             $this->password =Secu::hash($data['password']);//on cree la cle de hashage directement lors de la construction de l objet
@@ -31,9 +33,11 @@ class User
             $co =Co::getCo();
             $sql = "INSERT INTO `user` (`name`,`mail`,`password`) VALUES ('".$this->name."','".$this->mail." ','".$this->password."');";
             //echo $sql;
-            $co->reqInsert($sql);            
+            $co->reqInsert($sql); 
+            return true;           
         }else{
-            echo "<div class='alert alert-danger' role='alert'>L adresse mail exist deja</div>";    
+            echo "<div class='alert alert-danger' role='alert'>L adresse mail exist deja</div>"; 
+            return false;   
         }
         
     }

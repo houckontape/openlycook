@@ -47,13 +47,19 @@ class Routeur
                 $page->getPage();
                 break;
             case '/inscription/':
-                if(!isset($_SESSION['name'])){
+                if(isset($this->data['mail'])){
+                    print_r($this->data);
                     $user= new User($this->data);
-                    $user->enregistrement();
+                    $succes = $user->enregistrement();
+                    $infoPage=[
+                        'success'=>$succes,
+                    ];
+                    $page = new Inscription($infoPage);
+                    $page->getPage();
+                }else{
+                    $page = new Inscription();
+                    $page->getPage(); 
                 }
-                $page = new Inscription();
-                $page->getPage();
-                
                 break;
             case  '/profil/':
                 $page = new Profil($_SESSION);

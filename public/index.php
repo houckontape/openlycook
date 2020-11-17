@@ -15,6 +15,7 @@ $info = $http->get_request_uri();
 //echo $info;
 
 if(!empty($_POST)){
+    //print_r($_POST);
     $page = new Routeur($info,'post',$_POST);
     $page->createPage();
 }else{

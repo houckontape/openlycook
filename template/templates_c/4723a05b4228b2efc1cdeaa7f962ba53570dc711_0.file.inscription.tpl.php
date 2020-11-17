@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-11-14 21:04:07
+/* Smarty version 3.1.36, created on 2020-11-17 11:37:32
   from 'C:\wamp64\www\openlycook\template\inscription.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5fb04647b8f586_88004304',
+  'unifunc' => 'content_5fb3b5fceae090_43211381',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4723a05b4228b2efc1cdeaa7f962ba53570dc711' => 
     array (
       0 => 'C:\\wamp64\\www\\openlycook\\template\\inscription.tpl',
-      1 => 1604758926,
+      1 => 1605613042,
       2 => 'file',
     ),
   ),
@@ -26,7 +26,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:script.tpl' => 1,
   ),
 ),false)) {
-function content_5fb04647b8f586_88004304 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5fb3b5fceae090_43211381 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 
@@ -44,6 +44,11 @@ function content_5fb04647b8f586_88004304 (Smarty_Internal_Template $_smarty_tpl)
   <?php $_smarty_tpl->_subTemplateRender('file:header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
   <!-- Page Content -->
+  <?php if (((isset($_smarty_tpl->tpl_vars['succes']->value)))) {?>
+   <div class="alert alert-success" role="alert">
+    Félicitation enregistrement reussit !!
+   </div>
+  <?php }?>
   <?php $_smarty_tpl->_subTemplateRender('file:formulaireInscription.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
   <!-- Footer -->

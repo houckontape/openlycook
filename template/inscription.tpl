@@ -12,6 +12,11 @@
   <!-- Header -->
   {include file='header.tpl'}
   <!-- Page Content -->
+  {if (isset($succes))}
+   <div class="alert alert-success" role="alert">
+    Félicitation enregistrement reussit !!
+   </div>
+  {/if}
   {include file='formulaireInscription.tpl'}
   <!-- Footer -->
   {include file='footer.tpl'}
